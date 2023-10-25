@@ -43,6 +43,7 @@ This repository holds two forms of a simulation of the Colombian Board Game call
 
 
 **First Decision**
+
 In accordance with the rules laid out, different algorithms may need to be implemented in the code in accordance with the rules laid out previously and the states of the pieces. A piece can be in four states: In Jail, Finished (Safe), Free to Move (Free), or Closer to the Finishing Tile Than The Lowest Value of the Dice (TooClose). Based on the possible permutations that the four pieces can be in, 15 different algorithms were developed. These will be labeled strat1, strat2,..., strat15. The different permutations of the states that correspond to each strat can be found in the PossiblePermutationsOfStatesOfFourPieces.tsv file.
 For all of the following strats, rolling doubles implies the activation of a recursive method call to the main algorithm that chooses one of the following strats.
 strat1 - Roll Up to Three Times for Doubles. If Doubles Rolled, Free Pieces From Jail.
