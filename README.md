@@ -5,7 +5,7 @@ This repository holds two forms of a simulation of the Colombian Board Game call
 
 
 
-Rules of Parques Implemented into Program:
+**Rules of Parques Implemented into Program:**
 1. Four players (Red, Green, Blue, Yellow).
 2. Turn-based order (goes Red, Green, Blue, Yellow) that starts with a random color.
 3. Four pieces per player at the start.
@@ -37,6 +37,8 @@ Rules of Parques Implemented into Program:
 23. Once a piece traverses the board and passes the protected tile five spaces before its starting tile, it is now on an alternate route to its finishing tile. No piece of any other color can access this alternate route.
 24. In order for a piece to land on its finishing tile, the exact value of the number of spaces that the piece is from the finishing tile must be applied to the piece (ie. no applying a value of 6 to a piece 3 spaces away from the finishing tile).
 25. If there is only one active piece left on the board and it is within 6 spaces of the finishing tile, then only one die is rolled instead of two. As a side effect, no doubles can be rolled anymore for this player.
+26. A piece is unable to be moved because it is closer to the finishing tile than the lowest value of either of the die is still considered active. Therefore, even if the rest of the active pieces are in jail, the player does not get to roll up to three times as they would if all active pieces were in jail.
+
 
 
 
