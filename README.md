@@ -95,5 +95,6 @@ The decision on which possible move for each player to take is made randomly usi
 
 
 **Different Versions of the Simulator:**
+
 There are two Python versions of the program available. One goes turn-by-turn at the pace of the user. The other simulates however many games of Parques as specified by user input and then gives a statistical breakdown of wins by color. 
 There is one Python-based Processing version of the program available. This program creates a visual representation of the simulator, where one can see the game played on a reconstructed board. This version was helpful for initial testing and is also very aesthetically pleasing and fun to look at :)
