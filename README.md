@@ -66,3 +66,23 @@ The reason why both strat12 and strat14 exist is due to the method by which the 
 strat14 catches the cases where the piece is considered TooClose, however, because only one die is supposed to be rolled in this case, the initial dice roll that decided that the piece was TooClose is thrown out completely in favor of rolling one single die.
 
 
+
+
+**Second Decision:**
+
+In order to be able to generate the possible moves for the simulation to choose from, four general-purpose algorithms were created, one for choosing possible moves for one piece, two pieces, three pieces, and four pieces. The criteria for choosing the possible moves of the Free pieces was based on a number assigned to each piece, based on its ability to move with the values of the dice. 
+- A piece was assigned a value of 1 if it could only move the number of spaces of the die of the least value.
+- A piece was assigned a value of 2 if it could move the number of spaces of the value of either die, but it could not move the number of spaces equal to the sum of the values of both dice.
+- A piece was assigned a value of 3 if it could also move the number of spaces equal to the sum of the values of both dice.
+
+The combinations of 1's, 2's, and 3's determine the number of possible moves a player has. 
+- For 1 piece, there are 3 combinations
+- For 2 pieces, there are 9 combinations
+- For 3 pieces, there are 27 combinations
+- For 4 pieces, there are 81 combinations
+
+In order to shorten the code for the 4-piece move possibilities generator, 12 helper methods were created that could reduce the selection options from 81 options to 15 options. Each one of these helper methods is named with the following convention:
+NumberOfOnes|NumberOfTwos|NumberOfThrees
+ie. oneTwoOne, threeOneZero, zeroZeroFour
+The combinations that correspond to each helper can be found in the 
+
