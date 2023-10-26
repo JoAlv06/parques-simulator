@@ -84,5 +84,16 @@ The combinations of 1's, 2's, and 3's determine the number of possible moves a p
 In order to shorten the code for the 4-piece move possibilities generator, 12 helper methods were created that could reduce the selection options from 81 options to 15 options. Each one of these helper methods is named with the following convention:
 NumberOfOnes|NumberOfTwos|NumberOfThrees
 ie. oneTwoOne, threeOneZero, zeroZeroFour
-The combinations that correspond to each helper can be found in the 
+The combinations that correspond to each helper can be found in the Parques Possible Moves - 4Combo.tsv file
 
+
+
+
+**Third Decision:**
+
+The decision on which possible move for each player to take is made randomly using a random number generator. With the working framework of a Parques simulator in place, one can theoretically implement machine-learning algorithms in order to determine the best strategies of play for this board game. 
+
+
+**Different Versions of the Simulator:**
+There are two Python versions of the program available. One goes turn-by-turn at the pace of the user. The other simulates however many games of Parques as specified by user input and then gives a statistical breakdown of wins by color. 
+There is one Python-based Processing version of the program available. This program creates a visual representation of the simulator, where one can see the game played on a reconstructed board. This version was helpful for initial testing and is also very aesthetically pleasing and fun to look at :)
