@@ -52,17 +52,18 @@ For all of the following strats, rolling doubles implies the activation of a rec
 - strat4 - If Doubles are Rolled, Free the Pieces in Jail. Else, Decide to Move From The Two Free Pieces.
 - strat5 - If Doubles are Rolled, Free the One Piece in Jail and Move One Free Piece. Else, Decide to Move From the Two Free Pieces.
 - strat6 - Decide to Move From the Two Free Pieces.
-- strat7 - Decide to Move From the Three Free Pieces.
-- strat8 - Decide to Move From the Four Free Pieces.
-- strat9 - If No Doubles Are Rolled, The Turn is Skipped.
-- strat10 - If Doubles Are Rolled, Free the Piece(s) From Jail. Else, the Turn is Skipped.
-- strat11 - Move the One Free Piece With the Values From Both Dice. If the Sum of the Values of the Dice is Greater than the Number of Spaces the Piece is Away From the Finishing Tile, Then the Piece Moves with the Greater Value, and the Lesser Value is Thrown Out. Doubles Still Apply.
-- strat12 - Like strat11, Except When the Free Piece is Within Six Spaces of the Finishing Tile, Only One Die is Rolled. 
-- strat13 - Like strat11, Except When Doubles Are Rolled, Free the One Piece in Jail and Move the One Free Piece.
-- strat14 - One Die. If the Value is Greater Than the Number of Spaces Between the Piece and the Finishing Tile, Then Skip the Turn.
-- strat15 - If Doubles Are Rolled, Free the One Piece From Free and Move One Free Piece. Else, Decide to Move From the Three Free Pieces.
+- strat7 - If Doubles Are Rolled, Free the One Piece From Free and Move One Free Piece. Else, Decide to Move From the Three Free Pieces.
+- strat8 - Decide to Move From the Three Free Pieces.
+- strat9 - Decide to Move From the Four Free Pieces.
+- strat10 - If No Doubles Are Rolled, The Turn is Skipped.
+- strat11 - If Doubles Are Rolled, Free the Piece(s) From Jail. Else, the Turn is Skipped.
+- strat12 - Move the One Free Piece With the Values From Both Dice. If the Sum of the Values of the Dice is Greater than the Number of Spaces the Piece is Away From the Finishing Tile, Then the Piece Moves with the Greater Value, and the Lesser Value is Thrown Out. Doubles Still Apply.
+- strat13 - Like strat11, Except When the Free Piece is Within Six Spaces of the Finishing Tile, Only One Die is Rolled. 
+- strat14 - Like strat11, Except When Doubles Are Rolled, Free the One Piece in Jail and Move the One Free Piece.
+- strat15 - One Die. If the Value is Greater Than the Number of Spaces Between the Piece and the Finishing Tile, Then Skip the Turn.
 
-The reason why both strat12 and strat14 exist is due to the method by which the simulator decides whether a piece is too close to the finishing tile to move. strat12 catches the cases where a piece is not considered TooClose because the values of the individual die are less than the number of spaces that the piece is away from the finishing tile, but the piece is still within 6 spaces of the finishing tile
+
+The reason why both strat13 and strat15 exist is due to the method by which the simulator decides whether a piece is too close to the finishing tile to move. strat12 catches the cases where a piece is not considered TooClose because the values of the individual die are less than the number of spaces that the piece is away from the finishing tile, but the piece is still within 6 spaces of the finishing tile
 strat14 catches the cases where the piece is considered TooClose, however, because only one die is supposed to be rolled in this case, the initial dice roll that decided that the piece was TooClose is thrown out completely in favor of rolling one single die.
 
 
