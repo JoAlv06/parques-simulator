@@ -1,9 +1,6 @@
 # parques-simulator
-Simulator of the Colombian Board Game Parques, Complete with Randomized Moves
 
-This repository holds two forms of a simulation of the Colombian Board Game called Parques. One is a text-based simulator in Python and the other is a visual simulator in Python formatted for use in Processing. The simulation is based on random moves that comply with the following ruleset:
-
-
+This repository holds three forms of a simulation of the Colombian Board Game called Parques. The simulation is based on random moves that comply with the following ruleset:
 
 **Rules of Parques Implemented into Program:**
 1. Four players (Red, Green, Blue, Yellow).
@@ -41,10 +38,9 @@ This repository holds two forms of a simulation of the Colombian Board Game call
 27. A piece is unable to be moved because it is closer to the finishing tile than the lowest value of either of the die is still considered active. Therefore, even if the rest of the active pieces are in jail, the player does not get to roll up to three times as they would if all active pieces were in jail.
 
 
-
 **First Decision:**
 
-In accordance with the rules laid out, different algorithms may need to be implemented in the code in accordance with the rules laid out previously and the states of the pieces. A piece can be in four states: In Jail, Finished (Safe), Free to Move (Free), or Closer to the Finishing Tile Than The Lowest Value of the Dice (TooClose). Based on the possible permutations that the four pieces can be in, 15 different algorithms were developed. These will be labeled strat1, strat2,..., strat15. The different permutations of the states that correspond to each strat can be found in the PossiblePermutationsOfStatesOfFourPieces.tsv file.
+Per the rules laid out, different algorithms may need to be implemented in the code depending on the states of the pieces. A piece can be in four states: In Jail, Finished (Safe), Free to Move (Free), or Closer to the Finishing Tile Than The Lowest Value of the Dice (TooClose). Based on the possible permutations that the four pieces can be in, 15 different algorithms were developed. These will be labeled strat1, strat2,..., strat15. The different permutations of the states that correspond to each strat can be found in the PossiblePermutationsOfStatesOfFourPieces.tsv file.
 For all of the following strats, rolling doubles implies the activation of a recursive method call to the main algorithm that chooses one of the following strats:
 - strat1 - Roll Up to Three Times for Doubles. If Doubles Rolled, Free Pieces From Jail.
 - strat2 - If Doubles are Rolled, Free the Pieces in Jail. Else, Move the One Free Piece.
@@ -87,6 +83,8 @@ NumberOfOnes|NumberOfTwos|NumberOfThrees
 ie. oneTwoOne, threeOneZero, zeroZeroFour
 The combinations that correspond to each helper can be found in the Parques Possible Moves - 4Combo.tsv file
 
+The same thing was done to shorten the code for the 3-piece move possibilities generator, which used 7 helper methods were used to reduce the selection options from 27 options to 10 options. Each one of the helper methods is named with the same convention as before.
+The combinations that correspond to each helper can be found in the 
 
 
 
@@ -97,5 +95,5 @@ The decision on which possible move for each player to take is made randomly usi
 
 **Different Versions of the Simulator:**
 
-There are two Python versions of the program available. One goes turn-by-turn at the pace of the user. The other simulates however many games of Parques as specified by user input and then gives a statistical breakdown of wins by color. 
-There is one Python-based Processing version of the program available. This program creates a visual representation of the simulator, where one can see the game played on a reconstructed board. This version was helpful for initial testing and is also very aesthetically pleasing and fun to look at :)
+There are two text-based versions of the program available. One goes turn-by-turn at the pace of the user. The other simulates however many games of Parques as specified by user input and then gives a statistical breakdown of wins by color. 
+There is one visual Python-based Processing version of the program available. This program creates a visual representation of the simulator, where one can see the game played on a 2D board.
