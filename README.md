@@ -84,7 +84,7 @@ ie. oneTwoOne, threeOneZero, zeroZeroFour
 The combinations that correspond to each helper can be found in the Parques Possible Moves - 4Combo.tsv file
 
 The same thing was done to shorten the code for the 3-piece move possibilities generator, which used 7 helper methods were used to reduce the selection options from 27 options to 10 options. Each one of the helper methods is named with the same convention as before.
-The combinations that correspond to each helper can be found in the 
+The combinations that correspond to each helper can be found in the Parques Possible Moves - 3Combo.tsv file
 
 
 
