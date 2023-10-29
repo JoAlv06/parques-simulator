@@ -58,7 +58,7 @@ For all of the following strats, rolling doubles implies the activation of a rec
 - strat10 - If Doubles Are Rolled, Free the Piece(s) From Jail. Else, the Turn is Skipped.
 - strat11 - Move the One Free Piece With the Values From Both Dice. If the Sum of the Values of the Dice is Greater than the Number of Spaces the Piece is Away From the Finishing Tile, Then the Piece Moves with the Greater Value, and the Lesser Value is Thrown Out. Doubles Still Apply.
 - strat12 - Like strat11, Except When the Free Piece is Within Six Spaces of the Finishing Tile, Only One Die is Rolled. 
-- strat13 - Like strat11, Except When Doubles Are Rolled, Free the One Piece in Jail and Move the One Free Piece if Possible. If not Possible, Throw the Value Out.
+- strat13 - Like strat11, Except When Doubles Are Rolled, Free the One Piece in Jail and Move the One Free Piece.
 - strat14 - One Die. If the Value is Greater Than the Number of Spaces Between the Piece and the Finishing Tile, Then Skip the Turn.
 - strat15 - If Doubles Are Rolled, Free the One Piece From Free and Move One Free Piece. Else, Decide to Move From the Three Free Pieces.
 
